@@ -3,7 +3,7 @@ const JS_KEY_LEFT = 37;
 const JS_KEY_RIGHT = 39;
 const JS_KEY_DOWN = 40;
 const JS_KEY_ENTER = 13;
-const JS_KEY_ALT = 18;
+const JS_KEY_ALT = 32;
 const JS_KEY_CTRL = 17;
 const JS_KEY_SHIFT = 16;
 
