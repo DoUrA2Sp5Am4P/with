@@ -12,8 +12,6 @@ body {
 	background: #86C06CFF;
 	color: #071821FF;
 	border: 1px solid black;
-    padding: 5px;
-    margin-bottom: 5px;
 	text-align: center;
 	font-size: 64px;
 	}
@@ -21,7 +19,13 @@ body {
 </head>
 <body>
 	<div id="text">
-		<p>Играть</p>
+		< id="demo" onclick="myF()"p>Играть</p>
     </div>
+<script>
+function myF(){
+ fetch('index_2.html')
+  .then(response=> response.text())
+  .then(text=> document.getElementById('Page_a').innerHTML = text);
+}
 </body>
 </html>
