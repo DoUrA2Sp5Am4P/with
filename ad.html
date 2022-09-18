@@ -1,0 +1,16 @@
+<html>
+<head>
+</head>
+<body>
+<script>
+"use strict";
+import bridge from '/node_modules/@vkontakte/vk-bridge/dist/browser.min.js';
+bridge.send("VRWebInit", {});
+bridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
+    bridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
+    .then(data => console.log(data.result))
+    .catch(error => console.log(error));
+window.location.href = "index_2.html";
+</script>
+</body>
+</html>
