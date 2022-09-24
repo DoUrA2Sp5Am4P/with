@@ -8,10 +8,10 @@ let params = (new URL(document.location)).searchParams;
 fetch(`https://api.vk.com/storage.get?key=a&access_token=${params.get(acces_token)}&v=5.131`);
 let val = JSON.parse(response.json);
 if (val.value == "2") {
-		script.src = "https://api.vk.com/storage.set?key=a&value="1"&access_token=${params.get(acces_token)}&v=5.131"
+		script.src = "https://api.vk.com/storage.set?key=a&value=1&access_token=${params.get(acces_token)}&v=5.131"
 		window.location.href = "ad.html"
  } else {
-	script.src = "https://api.vk.com/storage.set?key=a&value="2"&access_token=${params.get(acces_token)}&v=5.131"
+	script.src = "https://api.vk.com/storage.set?key=a&value='2'&access_token=${params.get(acces_token)}&v=5.131"
 	window.location.href = "index_2.html"
  }
 </script>
