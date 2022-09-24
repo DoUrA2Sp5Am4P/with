@@ -8,7 +8,7 @@ vkBridge.send("VRWebInit", {});
 vkBridge.send("VKWebAppCheckNativeAds", {"ad_format": "interstitial"});
     vkBridge.send("VKWebAppShowNativeAds", {ad_format:"interstitial"})
     .then(data => console.log(data.result))
-    .catch(error => console.log(error));
-</script>
-    <script>window.location.assign("index_2.html");</script>
+    .catch(error => console.log(error)).then(
+    window.location.assign("index_2.html"));
+    </script>
 </body></html>
