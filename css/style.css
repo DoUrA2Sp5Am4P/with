@@ -287,7 +287,7 @@ body {
   }
 
   #game:after {
-    content: "Игра не работает в мобильной версии";
+    content: "PLEASE ROTATE ↻";
     font-size: 24px;
     font-weight: bold;
     color: #fff;
