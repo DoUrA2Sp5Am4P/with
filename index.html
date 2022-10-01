@@ -10,10 +10,14 @@ body {
 </style>
 </head>
 <body>
-	<script>
-	const startParams = new URLSearchParams(window.location.search)
-	console.log("i")
-	console.log(startParams)
+	<script src="https://unpkg.com/@vkontakte/vk-bridge@2.7.0/dist/browser.min.js"></script>
+<script>
+"use strict";
+vkBridge.send("VRWebInit", {});
+vkBridge.send("VKWebAppStorageSet", {
+   key: "example",
+   value: "example_value"
+}).then(data => console.log(data.success)).catch(error => console.log(error));
 	</script>
 	<form action="ad.html">
    <button style="background: #86C06CFF;color: #071821FF;border: 1px solid black;text-align: center;font-size: 64px;padding: 5px;margin-bottom: 5px;width: 1585">Играть</button>
