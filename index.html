@@ -14,7 +14,10 @@ body {
 <script>
 "use strict";
 vkBridge.send("VRWebInit", {});
-vkBridge.send("VKWebAppStorageGet", {"keys": ["example"]}).then(data => console.log(data.success)).catch(error => console.log(error));
+vkBridge.send("VKWebAppStorageGet", {"keys": ["example"]});
+	 function callbackFunc(result) {
+         console.log(result.response[0])
+         }
 	</script>
 	<form action="ad.html">
    <button style="background: #86C06CFF;color: #071821FF;border: 1px solid black;text-align: center;font-size: 64px;padding: 5px;margin-bottom: 5px;width: 1585">Играть</button>
