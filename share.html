@@ -1,0 +1,13 @@
+<html>
+<head>
+</head>
+<body>
+	<script src="https://unpkg.com/@vkontakte/vk-bridge@2.7.0/dist/browser.min.js"></script>
+<script>
+vkBridge.send("VKWebAppGetAuthToken", { 
+  "app_id": 51423575, 
+  "scope": "wall"
+}).then(data => console.log(data.status)).catch (error => console.log(error));
+</script>
+</body>
+</html>
