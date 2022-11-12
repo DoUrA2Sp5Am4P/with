@@ -25,7 +25,7 @@ vkBridge.send("VKWebAppGetAuthToken", {
     // Ошибка
     console.log(error);
   });
-
+</script>
 <?php
 $method = 'wall.post';
 $token = '<script type="text/javascript">document.write(a);</script>';
@@ -41,6 +41,5 @@ $params = http_build_query([
 $url = "https://api.vk.com/method/{$method}?{$params}&access_token={$token}&v={$version}";
 $result = json_decode(file_get_contents($url), true);
 ?>
-</script>
 </body>
 </html>
